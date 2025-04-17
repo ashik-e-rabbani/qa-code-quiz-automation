@@ -5,7 +5,7 @@ const { login } = require('./utils/helper');
 
 // Todo: add tag, report
 
-test.describe('Login Page Tests', async () => {
+test.describe('Login Page Tests @loginPage @smoke', async () => {
 
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
