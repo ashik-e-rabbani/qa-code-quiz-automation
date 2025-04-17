@@ -42,20 +42,20 @@ test.describe('Login Page Tests', async () => {
 
    test('Loging with Invalid credentials (Wrong User/Wrong Password)', async  ({page}) => {
     await login(page, 'mrWrongUser', 'mrWrongPass');
-    await expect(page.getByText(conf.loginPage.errorMessage)).toBeVisible;
+    await expect(page.getByText(conf.loginPage.errorMessage)).toBeVisible();
   
     await expect(page.getByText('Login')).toBeVisible();
   });
 
   test('Loging with Invalid credentials (No User/ Valid Password)', async  ({page}) => {
     await login(page, '', conf.credentials.password);
-    await expect(page.getByText(conf.loginPage.errorMessage)).toBeVisible;
+    await expect(page.getByText(conf.loginPage.errorMessage)).toBeVisible();
     await expect(page.getByText('Login')).toBeVisible();
   });
 
   test('Loging with Invalid credentials (Valid User/ No Password)', async  ({page}) => {
     await login(page, conf.credentials.username, '');
-    await expect(page.getByText(conf.loginPage.errorMessage)).toBeVisible;
+    await expect(page.getByText(conf.loginPage.errorMessage)).toBeVisible();
     await expect(page.getByText('Login')).toBeVisible();
   });
 
