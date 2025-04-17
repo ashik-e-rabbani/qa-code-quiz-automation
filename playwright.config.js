@@ -10,4 +10,5 @@ module.exports = defineConfig({
     video: 'retain-on-failure',
   },
   timeout: 30000,
+  reporter: [['html', { open: 'never' }]],
 });

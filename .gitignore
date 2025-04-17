@@ -2,3 +2,4 @@
 package-lock.json
 test-results/.last-run.json
 test-results/.DS_Store
+playwright-report/index.html
