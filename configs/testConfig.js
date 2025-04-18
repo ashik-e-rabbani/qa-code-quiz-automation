@@ -24,5 +24,28 @@ module.exports = {
       username: process.env.USERNAME || 'defaultUser',
       password: process.env.PASSWORD || 'defaultPass',
     },
+    usersAPI:{
+      serverURL:'http://localhost:9999',
+      getMessage:'Backend API',
+      creationtMessage:'Account Created',
+      existingMessage:'Account Already Exists',
+      updateMessage:'Account Updated',
+      deleteMessage:'Account Deleted',
+      newUser: {
+        username: 'ashik456',
+        name: 'Ashik R',
+        password: 'Firstp@8s',
+        favouriteFruit: 'Mango',
+        favouriteMovie: 'The boy in the stripped pajamas',
+        favouriteNumber: 1,
+      },
+      updatedUser: {
+        name: 'Ashik Rabbani',
+        password: 'updatedP@8s',
+        favouriteFruit: 'Silybin',
+        favouriteMovie: 'Golpo holeo Sotti',
+        favouriteNumber: '007',
+      }
+    }
   };
   

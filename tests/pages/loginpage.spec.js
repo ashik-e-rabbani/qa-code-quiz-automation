@@ -1,9 +1,9 @@
 const { test, expect } = require('@playwright/test');
 const conf = require('../../configs/testConfig');
-const { login } = require('./utils/helper');
+const { login } = require('../utils/helper');
 
 
-// Todo: add tag, report
+// Todo: add tag, report, make filename camel case
 
 test.describe('Login Page Tests @loginPage @smoke', async () => {
 
