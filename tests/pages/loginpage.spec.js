@@ -3,8 +3,6 @@ const conf = require('../../configs/testConfig');
 const { login } = require('../utils/helper');
 
 
-// Todo: add tag, report, make filename camel case
-
 test.describe('Login Page Tests @loginPage @smoke', async () => {
 
   test.beforeEach(async ({ page }) => {
