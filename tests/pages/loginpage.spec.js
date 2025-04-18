@@ -29,9 +29,9 @@ test.describe('Login Page Tests @loginPage @smoke', async () => {
   });
 
   /* 
-  Note  
-  As Portal doesn't have any proper message to validate this specific scenarios,
-  For all invalid credential scenarios it keeps the same error message. 
+Note :
+The portal does not provide distinct error messages for different invalid login scenarios. 
+Instead, it returns the same generic error message for all types of invalid credentials.
   */
 
   test('Loging with Invalid credentials (Valid User/Wrong Password)', async ({page}) => {
