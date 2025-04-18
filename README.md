@@ -17,7 +17,7 @@ Management simply asks that these tests provide as much evidence as possible of 
 
 ---
 
-## Here comes the proposed automation with Playwright
+## Proposed Automation with Playwright
 
 **Areas Covered**
 
