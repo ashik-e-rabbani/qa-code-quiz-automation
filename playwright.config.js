@@ -18,7 +18,7 @@
         use: {
           browserName: 'chromium',
           launchOptions: {
-            slowMo: 500
+            slowMo: 100
           }
         }
       }
