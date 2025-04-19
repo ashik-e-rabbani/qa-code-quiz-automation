@@ -3,7 +3,7 @@
 
     let apiServerIsAwake = false;
 
-    test('Check API server is running.', async ({ request }) => {
+    test('Check API server is running. @api @e2e', async ({ request }) => {
         const response = await request.get(conf.usersAPI.serverURL);
     try {
         expect(response.ok()).toBeTruthy();
@@ -17,7 +17,7 @@
     });
 
 
-    test('CREATE new user.', async ({ request }) => {
+    test('CREATE new user. @api @e2e', async ({ request }) => {
         test.skip(!apiServerIsAwake, 'Skipping because server is not running.');
     const response = await request.post(`${conf.usersAPI.serverURL}/user`, {
         data: conf.usersAPI.newUser,
@@ -28,7 +28,7 @@
     expect(text).toMatch(conf.usersAPI.creationtMessage);
     });
 
-    test('CHECK already existed user.', async ({ request }) => {
+    test('CHECK already existed user. @api @e2e', async ({ request }) => {
         test.skip(!apiServerIsAwake, 'Skipping because server is not running.');
     const response = await request.post(`${conf.usersAPI.serverURL}/user`, {
         data: conf.usersAPI.newUser,
@@ -38,7 +38,7 @@
     expect(text).toMatch(conf.usersAPI.existingMessage);
     });
 
-    test('UPDATE existing user.', async ({ request }) => {
+    test('UPDATE existing user. @api @e2e', async ({ request }) => {
         test.skip(!apiServerIsAwake, 'Skipping because server is not running.');
     const username =conf.usersAPI.newUser.username;
 
@@ -52,7 +52,7 @@
     });
 
 
-    test('DELETE existing user.', async ({ request }) => {
+    test('DELETE existing user. @api @e2e', async ({ request }) => {
         test.skip(!apiServerIsAwake, 'Skipping because server is not running.');
         const username =conf.usersAPI.newUser.username;
 

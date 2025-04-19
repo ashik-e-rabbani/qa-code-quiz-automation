@@ -7,10 +7,10 @@
       headless: true,
       baseURL: 'http://localhost:8080',
       screenshot: 'only-on-failure',
-      // video: 'retain-on-failure',
-      video: 'on',
+      video: 'retain-on-failure',
+      // video: 'on',
     },
-    timeout: 300000,
+    timeout: 50000,
     reporter: [['html', { open: 'never' }]],
     projects: [
       {

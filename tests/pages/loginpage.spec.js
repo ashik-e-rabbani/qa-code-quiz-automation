@@ -29,8 +29,7 @@ test.describe('Login Page Tests @loginPage @smoke', async () => {
   });
 
   /* 
-Note :
-The portal does not provide distinct error messages for different invalid login scenarios. 
+Note : The portal doesn't provide distinct error messages for different invalid login scenarios. 
 Instead, it returns the same generic error message for all types of invalid credentials.
   */
 
@@ -41,7 +40,7 @@ Instead, it returns the same generic error message for all types of invalid cred
    test('Loging with Invalid credentials (Wrong User/Wrong Password)', async  ({page}) => {
     await login(page, 'mrWrongUser', 'mrWrongPass');
     await expect(page.getByText(conf.loginPage.errorMessage)).toBeVisible();
-  
+
     await expect(page.getByText('Login')).toBeVisible();
   });
 
